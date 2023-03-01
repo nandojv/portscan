@@ -1,7 +1,7 @@
 import nmap
 
 primo_port_scanne = nmap.PortScanner()
-prima_scansione = primo_port_scanne.scan("146.59.227.185", "22,80,8080,53", "-v")
+prima_scansione = primo_port_scanne.scan("ip", "22,80,8080,53", "-v")
 
 #iterazione
 for host in primo_port_scanne.all_hosts():
